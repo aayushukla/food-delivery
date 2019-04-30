@@ -1,0 +1,21 @@
+
+<div class="text-center">
+        <h2>ORDERS</h2>
+</div>
+<br><br>
+<div class="row">
+        <div class="col-sm-6"  *ngFor="let order of orders">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Order #{{order.orderNumber}}</h5>
+              <label class="card-text">Dish name: </label> {{order.dish}}
+              <br>
+              <label class="card-text">Price: </label> {{order.price}} <br>
+              <label class="card-text">Quantity: </label> {{order.quantity}}
+              <button type="button" class="btn btn-block" style="background-color: green">Accept</button>
+              <button type="button" class="btn btn-block" style="background-color: red">Reject</button>
+            </div>
+          </div> <br>
+          </div> 
+        </div>
+      
